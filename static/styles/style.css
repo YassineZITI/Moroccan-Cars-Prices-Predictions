@@ -456,13 +456,5 @@ input[type="text"]:focus~span {
         height: auto;
     }
 
-    .container .card .right-side {
-       width: 100%;
-         
-    }
-
-    .container .card .left-side {
-               display: none;
-
-    }
+    
 }

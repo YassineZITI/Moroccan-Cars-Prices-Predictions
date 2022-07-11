@@ -4,10 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!-- custom styles -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
     <title>Cars Prices</title>
   </head>
   <body>
@@ -50,7 +51,7 @@
                     <div class="oriton_img my-5"> <img src="{{ url_for('static',filename='images/3jrYK9O.png') }}">
                         {%if prediction_text%}
                         <h5 class="my-4">{{ prediction_text }}:</h5>
-                        <h2>{{prediction}} Dh</h2>
+                        <h2 class="text-center">{{prediction}} Dh</h2>
                         {%endif%}
                         <p class="my-5 fs-5">The prediction is based on jumia data so the result is a very good estimate of the prices there.</p>
                         
